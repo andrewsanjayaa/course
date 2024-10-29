@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Laravel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -12,13 +12,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-    <!-- Styles -->
-    <style>
-        /* .swiper {
-            width: 100%;
-            height: 600px;
-        } */
-    </style>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
@@ -69,44 +63,212 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="grid grid-rows-2 md:grid-cols-1">
 
-        <div class="row">
-
+        <div class="gap-4">
             <div class="col-12">
-                <div class="hero min-h-screen bg-cover bg-no-repeat bg-center"
+                <div class="hero w-full min-h-screen bg-cover bg-no-repeat bg-center"
                     style="background-image: url(https://flowbite.com/docs/images/carousel/carousel-1.svg)">
-                    <div class="hero-overlay bg-opacity-60">
+                    <div class="hero-overlay bg-opacity-60 flex items-center justify-center">
                         <h1 class="text-5xl font-bold text-center">Hello World</h1>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
 
-    {{-- <div class="container mx-auto">
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+        <div class="gap-4">
+            <div class="col-12">
+                <div class="mx-12">
+                    <section class="py-12 h-64">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-800 dark:text-white-300 mb-3">
+                            About Us
+                        </h2>
+                        <div class="grid md:grid-cols-2 grid-cols-1">
+                            <div class="md:h-64 pt-2">
+                                <div class="swiper w-full h-96">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide text-center "><img
+                                                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                                                alt="" class="w-full"></div>
+                                        <div class="swiper-slide text-center">Slide 2</div>
+                                        <div class="swiper-slide text-center">Slide 3</div>
+                                    </div>
+
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                            <div class="md:ps-7 md:pt-1">
+                                <p
+                                    class="text-gray-700 dark:text-gray-400 md:text-xl text-xl sm:min-w-screen text-justify">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue
+                                    massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero,
+                                    sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.
+                                    Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue
+                                    massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero,
+                                    sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.
+                                    Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
-    </div> --}}
+
+        <div class="gap-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center">
+                    <h2 class="text-gray-800 text-4xl font-bold mb-4">Pricing</h2>
+                    <p class="text-sm text-gray-500">Change your plant according your needs</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 sm:grid-cols-2 gap-6 mt-12 max-sm:max-w-sm max-sm:mx-auto grid-cols-1">
+                    <div class="border rounded-md p-6">
+                        <h3 class="text-gray-800 text-xl font-semibold mb-2">Starter</h3>
+                        <p class="text-sm text-gray-500">For Individuals and Small Teams</p>
+
+                        <div class="mt-6">
+                            <h3 class="text-gray-800 text-2xl font-semibold">$10 <sub
+                                    class="text-gray-500 text-sm font-medium">per month</sub></h3>
+                        </div>
+
+                        <div class="mt-6">
+                            <h4 class="text-gray-800 text-xl font-semibold mb-2">Include</h4>
+                            <p class="text-sm text-gray-500">Everything you get in this plan</p>
+
+                            <ul class="mt-6 space-y-4">
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-green-500"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    50 Page Unlock
+                                </li>
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-green-500"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    10 GB Storage
+                                </li>
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    6 Team Members
+                                </li>
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    Unlimited Book Mark
+                                </li>
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    Unlimited basic feature
+                                </li>
+                            </ul>
+
+                            <button type="button"
+                                class="w-full mt-6 px-5 py-2.5 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md">Buy
+                                now</button>
+                        </div>
+                    </div>
+
+                    <div class="border rounded-md p-6">
+                        <h3 class="text-gray-800 text-xl font-semibold mb-2 flex items-center">Professional <span
+                                class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">Best
+                                Deal</span></h3>
+                        <p class="text-sm text-gray-500">For Individuals and Largest Teams</p>
+
+                        <div class="mt-6">
+                            <h3 class="text-gray-800 text-2xl font-semibold">$20 <sub
+                                    class="text-gray-500 text-sm font-medium">per month</sub></h3>
+                        </div>
+
+                        <div class="mt-6">
+                            <h4 class="text-gray-800 text-xl font-semibold mb-2">Include</h4>
+                            <p class="text-sm text-gray-500">Everything you get in this plan</p>
+
+                            <ul class="mt-6 space-y-4">
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    100 Page Unlock
+                                </li>
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    20 GB Storage
+                                </li>
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    8 Team Members
+                                </li>
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    Unlimited Book Mark
+                                </li>
+                                <li class="flex items-center text-sm text-gray-500">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        class="mr-3 fill-green-500" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
+                                            data-original="#000000" />
+                                    </svg>
+                                    Unlimited basic feature
+                                </li>
+                            </ul>
+
+                            <button type="button"
+                                class="w-full mt-6 px-5 py-2.5 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md">Buy
+                                now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -117,20 +279,15 @@
             direction: 'horizontal',
             loop: true,
 
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
+            autoplay: {
+                delay: 1500, // Delay between transitions in milliseconds
+                disableOnInteraction: false, // Allow autoplay to continue after user interactions
             },
 
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
             },
         });
     </script>
