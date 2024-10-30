@@ -128,6 +128,7 @@
                     <p class="text-sm text-gray-500">Change your plant according your needs</p>
                 </div>
 
+
                 <div class="grid lg:grid-cols-2 sm:grid-cols-2 gap-6 mt-12 max-sm:max-w-sm max-sm:mx-auto grid-cols-1">
                     <div class="border rounded-md p-6">
                         <h3 class="text-gray-800 text-xl font-semibold mb-2">Starter</h3>
