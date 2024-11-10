@@ -30,6 +30,8 @@ class CategoryController extends Controller
             return response()->json(['message' => 'No details found for this category'], 404);
         }
 
-        dd($details);
+        header('Content-Type: application/json');
+        echo json_encode($details);
+        die();
     }
 }
