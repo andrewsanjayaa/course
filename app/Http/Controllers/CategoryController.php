@@ -18,20 +18,12 @@ class CategoryController extends Controller
 
     public function detail($id)
     {
-        $category = Category::where('slug', $id)->first();
+        $details = Detail::where('category_id', $id)->get();
 
-        if (!$category) {
+        if (!$details) {
             return response()->json(['message' => 'Category not found'], 404);
         }
 
-        $details = $category->details;
-
-        if ($details->isEmpty()) {
-            return response()->json(['message' => 'No details found for this category'], 404);
-        }
-
-        header('Content-Type: application/json');
-        echo json_encode($details);
-        die();
+        return view('category.detail', compact('details'));
     }
 }

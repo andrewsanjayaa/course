@@ -1,6 +1,6 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     @foreach ($getData as $item)
-        <a href="{{ route('category.detail', $item->slug) }}">
+        <a href="{{ route('category.detail', $item->id) }}">
             <div class="relative bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden">
                 <img src="{{ $item->image }}" alt="Card Image" class="w-full h-64 object-cover">
                 <div

@@ -27,6 +27,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/category/{slug}', [Category::class, 'detail'])->middleware(['auth', 'verified'])->name('category.detail');
+Route::get('/category/detail/{id}', [Category::class, 'detail'])->name('category.detail');
 
 require __DIR__ . '/auth.php';
