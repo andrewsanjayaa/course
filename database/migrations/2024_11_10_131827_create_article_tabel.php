@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->foreignId('detail_id')->constrained()->onDelete('cascade');
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }
