@@ -22,7 +22,6 @@ class DetailFactory extends Factory
             'description' => $this->faker->text,
             'url' => 'https://www.youtube.com/watch?v=' . $this->faker->lexify('???????'),
             'category_id' => \App\Models\Category::inRandomOrder()->first()->id,
-            'slug' => Str::slug($this->faker->name),
         ];
     }
 }
