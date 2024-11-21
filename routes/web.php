@@ -17,7 +17,7 @@ use App\Http\Controllers\CategoryController as Category;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/dashboard', [Category::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
@@ -27,6 +27,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/category/detail/{id}', [Category::class, 'detail'])->name('category.detail');
+Route::get('/category/detail/{id}', [Category::class, 'detail'])->middleware('IsAdmin')->name('category.detail');
 
 require __DIR__ . '/auth.php';
