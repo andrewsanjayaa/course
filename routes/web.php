@@ -20,6 +20,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/dashboard', [Category::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/category/create', [Category::class, 'index'])->middleware(['auth', 'verified'])->name('category.create');
+Route::post('/category/create', [Category::class, 'store'])->middleware(['auth', 'verified'])->name('category.store');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -27,6 +29,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/category/detail/{id}', [Category::class, 'detail'])->middleware('IsAdmin')->name('category.detail');
+Route::get('/category/detail/{id}', [Category::class, 'detail'])->middleware('auth', 'verified')->name('category.detail');
 
 require __DIR__ . '/auth.php';
