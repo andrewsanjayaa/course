@@ -19,9 +19,9 @@
     <nav
         class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            <a href="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/b09cc69eb54d47cd365de6f3b1fb7cbf/detailed" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed" class="h-8">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Daanc Academy</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <a type="button" href="{{ route('register') }}"
@@ -69,7 +69,7 @@
         <div class="gap-4" id="home">
             <div class="col-12">
                 <div class="hero w-full min-h-screen bg-cover bg-no-repeat bg-center"
-                    style="background-image: url(https://flowbite.com/docs/images/carousel/carousel-1.svg)">
+                    style="background-image: url(https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/58e1592a5c93e003b70aa05fd58d557b/detailed)">
                     <div class="hero-overlay bg-opacity-60 flex items-center justify-center">
                         <h1 class="text-5xl font-bold text-center">Hello World</h1>
                     </div>
@@ -90,7 +90,7 @@
                                 <div class="swiper w-full h-96">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide text-center">
-                                            <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
                                                 alt="" class="w-full">
                                         </div>
                                         <div class="swiper-slide text-center">Slide 2</div>
@@ -103,11 +103,12 @@
                                 </div>
                             </div>
                             <div class="md:ps-7 md:pt-1">
+                                <h1 class ="font-bold text-2xl"> Bingung mencari tempat belajar?</h1>
                                 <p
                                     class="text-gray-700 dark:text-gray-400 md:text-xl text-xl sm:min-w-screen text-justify">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue
-                                    massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero,
-                                    sit amet commodo magna eros quis urna...
+                                    Daanc Academy merupakan platform online course yang berfokus pada mata pelajaran SAINS dan MATEMATIKA.
+                                    Kami menyediakan solusi bagi pelajar SMP dan SMA melalui video pembelajaran beserta artikel materi. Temukan 
+                                    jawaban atas keluhan Anda mulai dari mata pelajaran IPA, MTK, BIOLOGI, FISIKA, dan KIMIA melalui fitur kami! 
                                 </p>
                             </div>
                         </div>
@@ -120,7 +121,7 @@
         <div class="gap-4" id="pricing">
             <div class="max-w-5xl mx-auto">
                 <div class="text-center mb-8">
-                    <h2 class="text-gray-800 text-4xl font-bold mb-4">Pricing</h2>
+                    <h2 class="text-gray-800 text-4xl font-bold mb-4">Pricing   </h2>
                     <p class="text-sm text-gray-500">Change your plan according to your needs</p>
                 </div>
 
@@ -128,19 +129,18 @@
                 <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 mt-12">
                     <!-- First Pricing Card -->
                     <div class="border rounded-md p-6">
-                        <h3 class="text-gray-800 text-xl font-semibold mb-2 flex items-center">Professional <span
-                                class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">Best
-                                Deal</span></h3>
-                        <p class="text-sm text-gray-500">For Individuals and Largest Teams</p>
+                        <h3 class="text-gray-800 text-xl font-semibold mb-2 flex items-center">Free<span
+                                class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">pengguna gratis</span></h3>
+                        <p class="text-sm text-gray-500">Untuk jangka pendek</p>
 
                         <div class="mt-6">
-                            <h3 class="text-gray-800 text-2xl font-semibold">$20 <sub
-                                    class="text-gray-500 text-sm font-medium">per month</sub></h3>
+                            <h3 class="text-gray-800 text-2xl font-semibold">Rp0 <sub
+                                    class="text-gray-500 text-sm font-medium">per bulan</sub></h3>
                         </div>
 
                         <div class="mt-6">
-                            <h4 class="text-gray-800 text-xl font-semibold mb-2">Includes</h4>
-                            <p class="text-sm text-gray-500">Everything you get in this plan</p>
+                            <h4 class="text-gray-800 text-xl font-semibold mb-2">Manfaat</h4>
+                            <p class="text-sm text-gray-500">Apa saja yang bisa anda peroleh</p>
 
                             <ul class="mt-6 space-y-4">
                                 <li class="flex items-center text-sm text-gray-500">
@@ -150,7 +150,7 @@
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
                                             data-original="#000000" />
                                     </svg>
-                                    100 Page Unlock
+                                    5+ video pembelajaran gratis
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -159,34 +159,34 @@
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
                                             data-original="#000000" />
                                     </svg>
-                                    20 GB Storage
+                                    5+ artikel pembelajaran gratis
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                         class="mr-3 fill-green-500" viewBox="0 0 24 24">
-                                        <path
+                                        {{-- <path
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
-                                            data-original="#000000" />
+                                            data-original="#000000" /> --}}
                                     </svg>
-                                    8 Team Members
+                                  
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                         class="mr-3 fill-green-500" viewBox="0 0 24 24">
-                                        <path
+                                        {{-- <path
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
-                                            data-original="#000000" />
+                                            data-original="#000000" /> --}}
                                     </svg>
-                                    Unlimited Bookmarks
+                                    
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                         class="mr-3 fill-green-500" viewBox="0 0 24 24">
-                                        <path
+                                        {{-- <path
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
-                                            data-original="#000000" />
+                                            data-original="#000000" /> --}}
                                     </svg>
-                                    Unlimited Basic Features
+                                    
                                 </li>
                             </ul>
 
@@ -198,19 +198,18 @@
 
                     <!-- Second Pricing Card -->
                     <div class="border rounded-md p-6">
-                        <h3 class="text-gray-800 text-xl font-semibold mb-2 flex items-center">Professional <span
-                                class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">Best
-                                Deal</span></h3>
-                        <p class="text-sm text-gray-500">For Individuals and Largest Teams</p>
+                        <h3 class="text-gray-800 text-xl font-semibold mb-2 flex items-center">Premium <span
+                                class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3"> pengguna premium</span></h3>
+                        <p class="text-sm text-gray-500">Untuk jangka panjang</p>
 
                         <div class="mt-6">
-                            <h3 class="text-gray-800 text-2xl font-semibold">$20 <sub
-                                    class="text-gray-500 text-sm font-medium">per month</sub></h3>
+                            <h3 class="text-gray-800 text-2xl font-semibold">Rp109.000 <sub
+                                    class="text-gray-500 text-sm font-medium">per bulan</sub></h3>
                         </div>
 
                         <div class="mt-6">
-                            <h4 class="text-gray-800 text-xl font-semibold mb-2">Includes</h4>
-                            <p class="text-sm text-gray-500">Everything you get in this plan</p>
+                            <h4 class="text-gray-800 text-xl font-semibold mb-2">Manfaat</h4>
+                            <p class="text-sm text-gray-500">Apa saja yang bisa anda peroleh</p>
 
                             <ul class="mt-6 space-y-4">
                                 <li class="flex items-center text-sm text-gray-500">
@@ -220,7 +219,7 @@
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
                                             data-original="#000000" />
                                     </svg>
-                                    100 Page Unlock
+                                    Semua video pembelajaran gratis
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -229,34 +228,34 @@
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
                                             data-original="#000000" />
                                     </svg>
-                                    20 GB Storage
+                                    Semua artikel gratis
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                         class="mr-3 fill-green-500" viewBox="0 0 24 24">
-                                        <path
+                                        {{-- <path
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
-                                            data-original="#000000" />
+                                            data-original="#000000" /> --}}
                                     </svg>
-                                    8 Team Members
+                                    
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                         class="mr-3 fill-green-500" viewBox="0 0 24 24">
-                                        <path
+                                        {{-- <path
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
-                                            data-original="#000000" />
+                                            data-original="#000000" /> --}}
                                     </svg>
-                                    Unlimited Bookmarks
+                                    
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                         class="mr-3 fill-green-500" viewBox="0 0 24 24">
-                                        <path
+                                        {{-- <path
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
-                                            data-original="#000000" />
+                                            data-original="#000000" /> --}}
                                     </svg>
-                                    Unlimited Basic Features
+                                    
                                 </li>
                             </ul>
 
@@ -281,7 +280,7 @@
                     <div x-data="{ open: false }">
                         <button @click="open = !open"
                             class="w-full text-left bg-gray-200 p-4 rounded-md shadow-sm flex justify-between items-center hover:bg-gray-300 transition-all duration-300">
-                            <span class="text-lg font-semibold text-gray-800">What is Laravel?</span>
+                            <span class="text-lg font-semibold text-gray-800">Apa saja fitur di platform Daanc Academy?</span>
                             <span class="text-gray-500">
                                 <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -294,8 +293,9 @@
                             </span>
                         </button>
                         <div x-show="open" x-transition class="mt-4 p-4 bg-gray-50 rounded-md shadow-sm">
-                            <p class="text-gray-700">Laravel is a PHP framework designed for web artisans. It's robust
-                                and provides elegant syntax for rapid application development.</p>
+                            <p class="text-gray-700">Daanc Academy memiliki 2 fitur utama, yaitu:</p>
+                            <li class="text-gray-700">Konfigurasi Profil Akun: Anda bisa mengedit profil akun sendiri mulai dari alamat hingga biodata!</li>
+                            <li class="text-gray-700">Akses Materi Pembelajaran: Anda bisa mengakses materi video dan artikel melalui pilihan pengguna gratis ataupun berbayar!</li>
                         </div>
                     </div>
 
@@ -303,7 +303,7 @@
                     <div x-data="{ open: false }">
                         <button @click="open = !open"
                             class="w-full text-left bg-gray-200 p-4 rounded-md shadow-sm flex justify-between items-center hover:bg-gray-300 transition-all duration-300">
-                            <span class="text-lg font-semibold text-gray-800">How do I install Laravel?</span>
+                            <span class="text-lg font-semibold text-gray-800">Apa saja materi pembelajaran yang terdapat dalam Daanc Academy?</span>
                             <span class="text-gray-500">
                                 <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -316,8 +316,7 @@
                             </span>
                         </button>
                         <div x-show="open" x-transition class="mt-4 p-4 bg-gray-50 rounded-md shadow-sm">
-                            <p class="text-gray-700">You can install Laravel via Composer using the following command:
-                                <code>composer create-project --prefer-dist laravel/laravel projectName</code>
+                            <p class="text-gray-700">Daanc Academy menyediakan course online khusus yang terdiri dari mapel IPA dan MTK bagi pelajar SMP serta MTK, BIOLOGI, FISIKA, dan KIMIA bagi pelajar SMA jurusan IPA.</code>
                             </p>
                         </div>
                     </div>
@@ -326,7 +325,7 @@
                     <div x-data="{ open: false }">
                         <button @click="open = !open"
                             class="w-full text-left bg-gray-200 p-4 rounded-md shadow-sm flex justify-between items-center hover:bg-gray-300 transition-all duration-300">
-                            <span class="text-lg font-semibold text-gray-800">What is Blade?</span>
+                            <span class="text-lg font-semibold text-gray-800">Bagaimana cara saya mengakses video dan artikel pembelajaran?</span>
                             <span class="text-gray-500">
                                 <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -339,8 +338,8 @@
                             </span>
                         </button>
                         <div x-show="open" x-transition class="mt-4 p-4 bg-gray-50 rounded-md shadow-sm">
-                            <p class="text-gray-700">Blade is Laravel’s templating engine that allows you to build
-                                clean and reusable views with ease.</p>
+                            <p class="text-gray-700">Untuk mengakses video dan artikel pembelajaran: 
+                            <p class= "text-gray-700"> Anda hanya perlu membuat akun, pilih paket pengguna, lalu masuk ke dalam halaman Course. Pilihlah materi pembelajaran sesuai kebutuhan Anda.</p> </p>
                         </div>
                     </div>
 
@@ -348,7 +347,7 @@
                     <div x-data="{ open: false }">
                         <button @click="open = !open"
                             class="w-full text-left bg-gray-200 p-4 rounded-md shadow-sm flex justify-between items-center hover:bg-gray-300 transition-all duration-300">
-                            <span class="text-lg font-semibold text-gray-800">What are Eloquent Models?</span>
+                            <span class="text-lg font-semibold text-gray-800">Apa manfaat saya belajar di Daanc Academy?</span>
                             <span class="text-gray-500">
                                 <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -361,8 +360,7 @@
                             </span>
                         </button>
                         <div x-show="open" x-transition class="mt-4 p-4 bg-gray-50 rounded-md shadow-sm">
-                            <p class="text-gray-700">Eloquent is Laravel’s ORM (Object-Relational Mapping) that allows
-                                you to interact with your database using an elegant, active record implementation.</p>
+                            <p class="text-gray-700">Daanc Academy menyediakan materi pembelajaran yang fleksibel dimana Anda bisa menonton video belajar dan membaca artikel sekaligus. Video kami juga berasal dari sumber yang terpercaya dan teruji kualitasnya!</p>
                         </div>
                     </div>
                 </div>

@@ -2,13 +2,13 @@
     <div class="p-2 py-4 lg:py-6">
           <div class="mb-4 md:mb-0">
               <a href="https://flowbite.com/" class="flex items-center">
-                  <img src="https://flowbite.com/docs/images/logo.svg" class="h-10 me-3 my-4" alt="FlowBite Logo" />
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                  <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed" class="h-10 me-3 my-4" alt="FlowBite Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Daanc Academy</span>
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
               <div>
-                  <h2 class="mb-6 text-xs font-semibold text-white uppercase dark:text-white">Lorem ipsum dolor sit amet</h2>
+                  <h2 class="mb-6 text-xs font-semibold text-white uppercase dark:text-white">Transforming Lives Through Learning</h2>
               </div>
               <div>
                 <h2 class="mb-6 text-8 font-semibold text-white uppercase">Product</h2>
