@@ -3,10 +3,6 @@
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Dashboard') }}
         </h2>
-
-        {{-- <h2 class="font-semibold text-3xl text-gray-800 dark:text-gray-200 leading-tight text-center uppercase">
-            {{ __('Category') }}
-        </h2> --}}
     </x-slot>
 
     <div class="py-2">
@@ -27,5 +23,9 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="py-0">
+        @include('footer')
     </div>
 </x-app-layout>
