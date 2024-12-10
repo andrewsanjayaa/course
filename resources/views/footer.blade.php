@@ -4,7 +4,7 @@
             <a href="https://flowbite.com/" class="flex items-center">
                 <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
                     class="h-10 me-3 my-4" alt="FlowBite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Daanc Academy</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Daanc Academy</span>
             </a>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
