@@ -55,7 +55,8 @@
                 ['para', ['ul', 'ol', 'paragraph']],
                 ['insert', ['link', 'picture']],
                 ['view', ['fullscreen', 'codeview']],
-                ['alignment', ['alignLeft', 'alignCenter', 'alignRight']]
+                ['alignment', ['alignLeft', 'alignCenter', 'alignRight']],
+                ['list', ['ul', 'ol']],
             ]
         });
     });

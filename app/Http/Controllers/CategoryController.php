@@ -37,10 +37,18 @@ class CategoryController extends Controller
 
     public function detail($slug)
     {
+        $slug = $slug;
         $id = Category::where('slug', $slug)->first()->id;
         $details = Detail::where('category_id', $id)->get();
 
         // dd($details);
+
+        return view('dashboard', compact('details', 'slug'));
+    }
+
+    public function article($id)
+    {
+        $details = Detail::where('id', $id)->get()->first();
 
         return view('dashboard', compact('details'));
     }

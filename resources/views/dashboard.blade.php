@@ -8,20 +8,23 @@
     <head>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     </head>
-    <div class="py-2">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100 text-center uppercase text-2xl">
-                    @if (Route::currentRouteName() === 'dashboard')
-                        {{ __('Category') }}
-                    @endif
-                    @if (Route::currentRouteName() === 'category.detail')
-                        {{ __('Detail Category') }}
-                    @endif
+    @if (Route::currentRouteName() != 'category.detail.article')
+        <div class="py-2">
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                    <div class="p-6 text-gray-900 dark:text-gray-100 text-center uppercase text-2xl">
+                        @if (Route::currentRouteName() === 'dashboard')
+                            {{ __('Category') }}
+                        @endif
+                        @if (Route::currentRouteName() === 'category.detail')
+                            {{ __('Detail Category') }}
+                        @endif
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    @endif
+
 
     <div class="py-2">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -32,6 +35,9 @@
                     @endif
                     @if (Route::currentRouteName() === 'category.detail')
                         @include('category.detail')
+                    @endif
+                    @if (Route::currentRouteName() === 'category.detail.article')
+                        @include('category.article')
                     @endif
                 </div>
             </div>

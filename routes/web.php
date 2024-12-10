@@ -50,5 +50,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/category/detail/{id}', [Category::class, 'detail'])->middleware('auth', 'verified')->name('category.detail');
+Route::get('/category/detail/article/{slug}', [Category::class, 'article'])->middleware('auth', 'verified')->name('category.detail.article');
 
 require __DIR__ . '/auth.php';
