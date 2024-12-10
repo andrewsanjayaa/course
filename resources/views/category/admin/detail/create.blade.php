@@ -10,27 +10,34 @@
             @csrf
 @endif
 <div class="mb-5">
-    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Name</label>
+    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
     <input type="text" id="name" name="name" value="{{ $data->name ?? '' }}"
         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
         placeholder="name@flowbite.com" required />
 </div>
 <div class="mb-5">
-    <label for="url" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">URL</label>
+    <label for="url" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">URL</label>
     <input type="text" id="url" name="url" value="{{ $data->url ?? '' }}"
         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
         required />
 </div>
 <div class="mb-5">
-    <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Description</label>
+    <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
     <textarea id="summernote" name="description"
         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
         required>{!! $data->description ?? '' !!}
     </textarea>
 </div>
 <button type="submit" name="submit"
-    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Create
-    Detail</button>
+    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    @if (Route::currentRouteName() === 'category-detail.edit')
+        Edit Detail
+    @else
+        Create Detail
+    @endif
+
+
+</button>
 </form>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -53,3 +60,11 @@
         });
     });
 </script>
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        .note-editable {
+            color: white !important;
+        }
+    }
+</style>
