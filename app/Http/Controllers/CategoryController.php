@@ -35,11 +35,12 @@ class CategoryController extends Controller
         }
     }
 
-    public function detail($id)
+    public function detail($slug)
     {
+        $id = Category::where('slug', $slug)->first()->id;
         $details = Detail::where('category_id', $id)->get();
 
-        return view('category.detail', compact('details'));
+        return view('dashboard', compact('details'));
     }
 
     public function create()
