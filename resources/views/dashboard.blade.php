@@ -4,7 +4,9 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
     <div class="py-2">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
@@ -34,7 +36,10 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d6e6a5f502856b9769364cbece5dc70e4b556b90
     <div class="py-0">
         @include('footer')
     </div>
