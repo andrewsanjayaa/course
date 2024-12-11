@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8">
@@ -19,7 +19,7 @@
     <nav
         class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/b09cc69eb54d47cd365de6f3b1fb7cbf/detailed"
+            <a href="https://res.cloudinary.com/durosbtet/image/upload/v1733837721/logo-transparant.png"
                 class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
                     class="h-8">
@@ -65,7 +65,7 @@
         </div>
     </nav>
 
-    <div class="grid grid-rows-2 md:grid-cols-1 gap-y-8 dark:bg-gray-900 bg-white">
+    <div class="grid grid-rows-2 md:grid-cols-1 dark:bg-gray-900 bg-white">
 
         <!-- Hero Section -->
         <div class="gap-4" id="home">
@@ -79,7 +79,8 @@
         </div>
 
         <!-- About Us Section -->
-        <div class="gap-4" id="about">
+        <div class="gap-4" id="about" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
+            data-aos-duration="600">
             <div class="col-12">
                 <div class="mx-4 sm:mx-12">
                     <section class="py-12 md:py-16">
@@ -123,14 +124,13 @@
         </div>
 
         <!-- Pricing Section -->
-        <div class="gap-4" id="pricing">
-            <div class="max-w-5xl mx-auto">
-                <div class="text-center mb-8">
+        <div class="gap-4" id="pricing" data-aos="fade-up" data-aos-duration="2000">
+            <div class="max-w-5xl mx-auto mt-">
+                <div class="text-center">
                     <h2 class="text-gray-800 dark:text-white text-4xl font-bold mb-4">Pricing </h2>
                     <p class="text-sm text-gray-500 dark:text-white">Change your plan according to your needs</p>
                 </div>
 
-                <!-- Add grid layout -->
                 <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 mt-12">
                     <!-- First Pricing Card -->
                     <div class="border rounded-md p-6">
@@ -150,8 +150,8 @@
 
                             <ul class="mt-6 space-y-4">
                                 <li class="flex items-center text-sm text-gray-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" class="mr-3 fill-green-500"
-                                        viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        class="mr-3 fill-green-500" viewBox="0 0 24 24">
                                         <path
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
                                             data-original="#000000" />
@@ -193,8 +193,8 @@
 
                     <!-- Second Pricing Card -->
                     <div class="border rounded-md p-6">
-                        <h3 class="text-gray-800 dark:text-white text-xl font-semibold mb-2 flex items-center">Premium <span
-                                class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">
+                        <h3 class="text-gray-800 dark:text-white text-xl font-semibold mb-2 flex items-center">Premium
+                            <span class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">
                                 pengguna premium</span></h3>
                         <p class="text-sm text-gray-500">Untuk jangka panjang</p>
 
@@ -240,7 +240,7 @@
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                         class="mr-3 fill-green-500" viewBox="0 0 24 24">
-                                </svg>
+                                    </svg>
                                 </li>
                             </ul>
 
@@ -254,7 +254,7 @@
         </div>
 
         {{-- FAQ --}}
-        <div class="flex justify-center items-center min-h-screen py-10">
+        <div class="flex justify-center items-center min-h-screen py-10" data-aos="fade-up" data-aos-duration="2000">
             <div class="max-w-6xl w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
                 <!-- Title -->
                 <h1 class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-6">Frequently Asked
@@ -388,7 +388,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
-<div class="py-0">
+<div class="py-0 bg-[#45526e] dark:bg-gray-900">
     @include('footer')
 </div>
+
 </html>

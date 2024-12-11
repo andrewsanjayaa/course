@@ -1,13 +1,14 @@
-<footer class="bg-[#45526e] dark:bg-gray-900">
+<footer class="bg-[#45526e] dark:bg-gray-900" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"
+    data-aos-duration="600">
     <div class="p-2 py-4 lg:py-6">
         <div class="mb-4 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
+            <a href="{{ route('home') }}" class="flex items-center">
                 <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
                     class="h-10 me-3 my-4" alt="FlowBite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Daanc Academy</span>
             </a>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
+        <div class="grid grid-cols-2 gap-6 sm:gap-6 sm:grid-cols-4">
             <div>
                 <h2 class="mb-6 text-xs font-semibold text-white uppercase dark:text-white">Transforming Lives Through
                     Learning</h2>
@@ -16,10 +17,10 @@
                 <h2 class="mb-6 text-8 font-semibold text-white uppercase">Product</h2>
                 <ul class="text-gray-400 dark:text-gray-400 font-medium">
                     <li class="mb-4">
-                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Free</a>
+                        <a href="{{ route('register') }}" class="hover:underline ">Free</a>
                     </li>
                     <li>
-                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Premium</a>
+                        <a href="{{ route('register') }}" class="hover:underline">Premium</a>
                     </li>
                 </ul>
             </div>
@@ -27,10 +28,10 @@
                 <h2 class="mb-6 text-sm font-semibold text-white uppercase">Features</h2>
                 <ul class="text-gray-400 dark:text-gray-400 font-medium">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Video</a>
+                        <a href="{{ route('register') }}" class="hover:underline">Video</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:underline">Artikel</a>
+                        <a href="{{ route('register') }}" class="hover:underline">Artikel</a>
                     </li>
                 </ul>
             </div>
@@ -62,8 +63,8 @@
         </iframe>
     </div>
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-300 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/"
-                class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+        <span class="text-sm text-gray-300 sm:text-center dark:text-gray-400"><a href="{{ route('home') }}"
+                class="hover:underline"></a></span>
         <div class="flex mt-4 sm:justify-center sm:mt-0">
             <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
                 <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
