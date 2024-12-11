@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller as BaseController;
 use App\Http\Controllers\CategoryController as Category;
 use App\Http\Controllers\ChartController as Chart;
 use App\Http\Controllers\DetailController as Detail;
@@ -40,7 +41,10 @@ Route::middleware('auth', 'verified')->group(function () {
     Route::put('/category-detail/update/{slug}', [Detail::class, 'update'])->name('category-detail.update');
     Route::delete('/category-detail/delete/{slug}', [Detail::class, 'delete'])->name('category-detail.delete');
 
-    Route::get('/users', [Dashboard::class, 'index'])->name('users');
+    Route::get('/user', [BaseController::class, 'index'])->name('users');
+    Route::get('/user/edit/{id}', [BaseController::class, 'edit'])->name('user.edit');
+    Route::put('/user/update/{id}', [BaseController::class, 'updates'])->name('user.update');
+    Route::delete('/user/delete/{id}', [BaseController::class, 'delete'])->name('user.delete');
 });
 
 Route::middleware('auth')->group(function () {

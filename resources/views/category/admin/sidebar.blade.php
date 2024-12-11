@@ -123,6 +123,12 @@
             @if (Route::currentRouteName() === 'category-detail.edit')
                 @include('category.admin.detail.create')
             @endif
+            @if (Route::currentRouteName() === 'users')
+                @include('category.admin.user.index')
+            @endif
+            @if (Route::currentRouteName() === 'user.edit')
+                @include('category.admin.user.edit')
+            @endif
         </div>
     </div>
 
