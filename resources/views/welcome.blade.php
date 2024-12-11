@@ -21,14 +21,13 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://res.cloudinary.com/durosbtet/image/upload/v1733837721/logo-transparant.png"
                 class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
+                <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/cf7d3514b32e631ae4b052566b47c50b/detailed"
                     class="h-8">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Daanc Academy</span>
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <a type="button" href="{{ route('register') }}"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
-                    started</a>
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Masuk</a>
                 <button data-collapse-toggle="navbar-sticky" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
@@ -46,19 +45,19 @@
                     <li>
                         <a href="#home"
                             class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                            aria-current="page">Home</a>
+                            aria-current="page">Beranda</a>
                     </li>
                     <li>
                         <a href="#about"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tentang</a>
                     </li>
                     <li>
                         <a href="#pricing"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Harga</a>
                     </li>
                     <li>
                         <a href="#faq"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">FAQ</a>
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tanya</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +84,7 @@
                 <div class="mx-4 sm:mx-12">
                     <section class="py-12 md:py-16">
                         <h2 class="text-3xl font-bold tracking-tight text-gray-800 dark:text-white mb-6">
-                            About Us
+                            Tentang Kami 
                         </h2>
                         <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
                             <div class="md:h-64 pt-2">
@@ -127,8 +126,8 @@
         <div class="gap-4" id="pricing" data-aos="fade-up" data-aos-duration="2000">
             <div class="max-w-5xl mx-auto mt-">
                 <div class="text-center">
-                    <h2 class="text-gray-800 dark:text-white text-4xl font-bold mb-4">Pricing </h2>
-                    <p class="text-sm text-gray-500 dark:text-white">Change your plan according to your needs</p>
+                    <h2 class="text-gray-800 dark:text-white text-4xl font-bold mb-4">Layanan Kami </h2>
+                    <p class="text-sm text-gray-500 dark:text-white">Pilihan harga fleksibel sesuai kebutuhan Anda</p>
                 </div>
 
                 <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 mt-12">
@@ -257,8 +256,7 @@
         <div class="flex justify-center items-center min-h-screen py-10" data-aos="fade-up" data-aos-duration="2000">
             <div class="max-w-6xl w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
                 <!-- Title -->
-                <h1 class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-6">Frequently Asked
-                    Questions</h1>
+                <h1 class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-6">Pertanyaan Tentang Kami</h1>
 
                 <!-- FAQ Section -->
                 <div class="space-y-6" id="faq">
