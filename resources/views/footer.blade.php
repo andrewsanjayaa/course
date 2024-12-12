@@ -3,7 +3,7 @@
     <div class="p-2 py-4 lg:py-6">
         <div class="mb-4 md:mb-0">
             <a href="{{ route('home') }}" class="flex items-center">
-                <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
+                <img src="https://res.cloudinary.com/durosbtet/image/upload/v1733837721/logo-transparant.png"
                     class="h-10 me-3 my-4" alt="FlowBite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Daanc Academy</span>
             </a>

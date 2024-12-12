@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>Daanc Corp.</title>
+        <link rel="icon" href="https://res.cloudinary.com/durosbtet/image/upload/v1733837721/logo-transparant.png">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

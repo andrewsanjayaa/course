@@ -7,15 +7,22 @@
 
     <title>Daanc Corp.</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 
-<body>
+<body class="overflow-auto scrollbar-hide">
     <nav
         class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -78,7 +85,7 @@
         </div>
 
         <!-- About Us Section -->
-        <div class="gap-4" id="about" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
+        <div class="gap-4" id="about" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"
             data-aos-duration="600">
             <div class="col-12">
                 <div class="mx-4 sm:mx-12">
@@ -99,8 +106,8 @@
                                     </div>
 
 
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
+                                    {{-- <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div> --}}
                                 </div>
                             </div>
                             <div class="md:ps-7 md:pt-1">
@@ -123,8 +130,8 @@
         </div>
 
         <!-- Pricing Section -->
-        <div class="gap-4" id="pricing" data-aos="fade-up" data-aos-duration="2000">
-            <div class="max-w-5xl mx-auto mt-">
+        <div class="gap-4" id="pricing" data-aos="fade-up" data-aos-offset="150" data-aos-easing="ease-in-sine">
+            <div class="max-w-6xl mx-auto mt-">
                 <div class="text-center">
                     <h2 class="text-gray-800 dark:text-white text-4xl font-bold mb-4">Layanan Kami </h2>
                     <p class="text-sm text-gray-500 dark:text-white">Pilihan harga fleksibel sesuai kebutuhan Anda</p>
@@ -253,7 +260,7 @@
         </div>
 
         {{-- FAQ --}}
-        <div class="flex justify-center items-center min-h-screen py-10" data-aos="fade-up" data-aos-duration="2000">
+        <div class="gap-4 flex justify-center items-center min-h-screen py-10" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">
             <div class="max-w-6xl w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
                 <!-- Title -->
                 <h1 class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-6">Pertanyaan Tentang Kami</h1>

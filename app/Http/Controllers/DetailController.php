@@ -22,6 +22,11 @@ class DetailController extends Controller
 
         $getData = Detail::where('category_id', $category->id)->get();
 
+        foreach ($getData as $data) {
+            // Pastikan deskripsi diubah untuk merender HTML
+            $data->description = htmlspecialchars_decode($data->description);
+        }
+
         // dd($getData);
 
         return view('category.admin.sidebar', compact('getData', 'category'));
