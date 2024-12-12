@@ -17,6 +17,9 @@
                     Name
                 </th>
                 <th scope="col" class="px-6 py-3">
+                    Main Text
+                </th>
+                <th scope="col" class="px-6 py-3">
                     Description
                 </th>
                 <th scope="col" class="px-6 py-3">
@@ -37,8 +40,11 @@
                         {{ $data->name }}
                     </td>
                     <td class="px-3 py-4">
+                        {{ $data->short_description }}
+                    </td>
+                    <td class="px-3 py-4">
                         <button id="openModal" data-description="{{ $data->description ?? '' }}"
-                            class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none">
+                            class="openModal px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none">
                             Description
                         </button>
                     </td>
@@ -75,9 +81,8 @@
             <span class="text-xl">&times;</span>
         </button>
 
-        <!-- Modal Content -->
         <h2 class="text-2xl font-semibold text-gray-800 dark:text-white"></h2>
-        <p class="mt-4 dark:text-gray-500" id="data-description"></p> <!-- Empty initially -->
+        <p class="mt-4 dark:text-gray-500" id="data-description"></p>
         <div class="mt-6 flex justify-end">
             <button id="closeModalBtn"
                 class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none">Close</button>
@@ -86,23 +91,21 @@
 </div>
 
 <script>
-    // Get modal and button elements
     const modal = document.getElementById('modal');
-    const openModalButton = document.getElementById('openModal');
     const closeModalButton = document.getElementById('closeModal');
     const closeModalBtn = document.getElementById('closeModalBtn');
     const dataDescription = document.getElementById('data-description');
 
-    // Open modal event
-    openModalButton.addEventListener('click', () => {
-        // Get the description data from the button
-        const description = openModalButton.getAttribute('data-description');
+    const openModalButtons = document.querySelectorAll('.openModal');
 
-        // Update modal content with the description
-        dataDescription.innerHTML = description;
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const description = button.getAttribute('data-description');
 
-        // Show the modal
-        modal.classList.remove('hidden');
+            dataDescription.innerHTML = description;
+
+            modal.classList.remove('hidden');
+        });
     });
 
     // Close modal event
@@ -114,3 +117,14 @@
         modal.classList.add('hidden');
     });
 </script>
+
+<style>
+    body.modal-open {
+        overflow: hidden;
+    }
+
+    #modal .bg-white {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+</style>

@@ -13,7 +13,14 @@
     <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
     <input type="text" id="name" name="name" value="{{ $data->name ?? '' }}"
         class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-        placeholder="name@flowbite.com" required />
+        required />
+</div>
+<div class="mb-5">
+    <label for="short_description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Main
+        Text</label>
+    <input type="text" id="short_description" name="short_description" value="{{ $data->short_description ?? '' }}"
+        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+        required />
 </div>
 <div class="mb-5">
     <label for="url" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">URL</label>

@@ -16,7 +16,7 @@ use function Laravel\Prompts\alert;
 
 class DetailController extends Controller
 {
-    public function index($slug)
+    public function indexs($slug)
     {
         $category = Category::where('slug', $slug)->first();
 
@@ -44,50 +44,17 @@ class DetailController extends Controller
 
         $data = $request->all();
 
-        // Check if description contains a base64 image
-        if (preg_match('/<img.*?src="data:image\/(.*?);base64,(.*?)"/', $data['description'], $matches)) {
+        $category = Category::where('slug', $slug)->first();
 
-            $imageData = $matches[2];
+        Detail::create([
+            'name' => $data['name'],
+            'short_description' => $data['short_description'],
+            'description' => $data['description'],
+            'url' => $data['url'],
+            'category_id' => $category->id,
+        ]);
 
-            $decodedImage = base64_decode($imageData);
-
-            $cloudinary = new Cloudinary([
-                'cloud' => [
-                    'cloud_name' => env('CLOUD_NAME'),
-                    'api_key' => env('CLOUD_API_KEY'),
-                    'api_secret' => env('CLOUD_API_SECRET'),
-                ]
-            ]);
-
-            try {
-                $tmpFile = tmpfile();
-                fwrite($tmpFile, $decodedImage);
-                fseek($tmpFile, 0);
-                $uploadResult = $cloudinary->uploadApi()->upload($tmpFile);
-
-                $imageUrl = $uploadResult['secure_url'];
-
-                $data['description'] = preg_replace('/<img.*?src="data:image\/(.*?);base64,(.*?)"/', '<img src="' . $imageUrl . '"', $data['description']);
-
-                $category = Category::where('slug', $slug)->first();
-
-                Detail::create([
-                    'name' => $data['name'],
-                    'description' => $data['description'],
-                    'url' => $data['url'],
-                    'category_id' => $category->id,
-                ]);
-
-                return redirect()->route('category-detail', ['slug' => $category->slug])->with('success', 'Detail created successfully');
-            } catch (\Exception $e) {
-
-                $category = Category::where('slug', $slug)->first();
-
-                return response()->json(['error' => 'Image upload failed: ' . $e->getMessage()], 500);
-            }
-        }
-
-        return response()->json(['message' => 'No base64 image found.']);
+        return redirect()->route('category-detail', ['slug' => $category->slug])->with('success', 'Detail created successfully');
     }
 
     public function edit($slug)
@@ -113,63 +80,15 @@ class DetailController extends Controller
 
         $category = Category::where('id', $detail->category_id)->first();
 
-        if (preg_match('/<img.*?src="data:image\/(.*?);base64,(.*?)"/', $data['description'], $matches)) {
+        Detail::where('name', $slug)->update([
+            'name' => $data['name'],
+            'short_description' => $data['short_description'],
+            'description' => $data['description'],
+            'url' => $data['url'],
+            'category_id' => $category->id,
+        ]);
 
-            $imageData = $matches[2];
-
-            $decodedImage = base64_decode($imageData);
-
-            $cloudinary = new Cloudinary([
-                'cloud' => [
-                    'cloud_name' => env('CLOUD_NAME'),
-                    'api_key' => env('CLOUD_API_KEY'),
-                    'api_secret' => env('CLOUD_API_SECRET'),
-                ]
-            ]);
-
-            try {
-                $tmpFile = tmpfile();
-                fwrite($tmpFile, $decodedImage);
-                fseek($tmpFile, 0);
-                $uploadResult = $cloudinary->uploadApi()->upload($tmpFile);
-
-                $imageUrl = $uploadResult['secure_url'];
-
-                $data['description'] = preg_replace('/<img.*?src="data:image\/(.*?);base64,(.*?)"/', '<img src="' . $imageUrl . '"', $data['description']);
-
-
-                Detail::where('name', $slug)->update([
-                    'name' => $data['name'],
-                    'description' => $data['description'],
-                    'url' => $data['url'],
-                    'category_id' => $category->id,
-                ]);
-
-                preg_match('/https:\/\/res\.cloudinary\.com\/[^\/]+\/image\/upload\/[^\/]+\/([^\.]+)/', $detail->description, $matches);
-
-                $cloudinary->uploadApi()->destroy($matches[1]);
-
-                return redirect()->route('category-detail', ['slug' => $category->slug])->with('success', 'Detail created successfully');
-            } catch (\Exception $e) {
-
-                $category = Category::where('slug', $slug)->first();
-
-                return response()->json(['error' => 'Image upload failed: ' . $e->getMessage()], 500);
-            }
-        } else {
-
-            // dd($data['description']);
-
-            Detail::where('name', $slug)->update([
-                'name' => $data['name'],
-                'description' => $data['description'],
-                'url' => $data['url'],
-            ]);
-
-            return redirect()->route('category-detail', ['slug' => $category->slug])->with('success', 'Detail created successfully');
-        }
-
-        return redirect()->route('category-detail', ['slug' => $slug])->with('success', 'Detail updated successfully');
+        return redirect()->route('category-detail', ['slug' => $category->slug])->with('success', 'Detail updated successfully');
     }
 
     public function delete($slug)
@@ -181,25 +100,6 @@ class DetailController extends Controller
         $category = Category::where('id', $data->category_id)->first();
 
         // dd($category);
-
-        preg_match('/https:\/\/res\.cloudinary\.com\/[^\/]+\/image\/upload\/[^\/]+\/([^\.]+)/', $data->description, $matches);
-
-        $cloudinary = new Cloudinary([
-            'cloud' => [
-                'cloud_name' => env('CLOUD_NAME'),
-                'api_key' => env('CLOUD_API_KEY'),
-                'api_secret' => env('CLOUD_API_SECRET'),
-            ]
-        ]);
-
-
-        try {
-            $cloudinary->uploadApi()->destroy($matches[1]);
-        } catch (\Exception $e) {
-            return response()->json(['error' => 'Image upload failed: ' . $e->getMessage()], 500);
-            dd($e->getMessage());
-        }
-
 
         Detail::where('name', $slug)->delete();
 

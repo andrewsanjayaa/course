@@ -62,7 +62,7 @@
             class="w-full h-full object-cover" allowfullscreen>
         </iframe>
     </div>
-    <div class="sm:flex sm:items-center sm:justify-between">
+    <div class="sm:flex sm:items-center sm:justify-between pb-2 md:pt-2">
         <span class="text-sm text-gray-300 sm:text-center dark:text-gray-400"><a href="{{ route('home') }}"
                 class="hover:underline"></a></span>
         <div class="flex mt-4 sm:justify-center sm:mt-0">
@@ -104,5 +104,5 @@
             </a>
         </div>
     </div>
-    </div>
+  
 </footer>

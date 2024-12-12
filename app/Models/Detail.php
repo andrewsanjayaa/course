@@ -9,7 +9,7 @@ class Detail extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['category_id', 'name', 'description', 'image', 'url'];
+    protected $fillable = ['category_id', 'name', 'description', 'image', 'url', 'short_description'];
 
     public function category()
     {

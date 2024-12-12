@@ -34,7 +34,7 @@ Route::middleware('auth', 'verified')->group(function () {
     Route::put('/category/update/{slug}', [Category::class, 'update'])->name('category.update');
     Route::delete('/category/delete/{slug}', [Category::class, 'delete'])->name('category.delete');
 
-    Route::get('/category-detail/{slug}', [Detail::class, 'index'])->name('category-detail');
+    Route::get('/category-detail/{slug}', [Detail::class, 'indexs'])->name('category-detail');
     Route::get('/category-detail/create/{slug}', [Detail::class, 'create'])->name('category-detail.create');
     Route::post('/category-detail/store/{slug}', [Detail::class, 'store'])->name('category-detail.store');
     Route::get('/category-detail/edit/{slug}', [Detail::class, 'edit'])->name('category-detail.edit');
@@ -48,7 +48,7 @@ Route::middleware('auth', 'verified')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::get('/profile', [ProfileController::class, 'edits'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
