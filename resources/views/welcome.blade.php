@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Daanc Corp.</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="icon" href="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="icon"
+        href="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -91,7 +92,7 @@
                 <div class="mx-4 sm:mx-12">
                     <section class="py-12 md:py-16">
                         <h2 class="text-3xl font-bold tracking-tight text-gray-800 dark:text-white mb-6">
-                            Tentang Kami 
+                            Tentang Kami
                         </h2>
                         <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
                             <div class="md:h-64 pt-2">
@@ -101,13 +102,19 @@
                                             <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
                                                 alt="" class="w-full">
                                         </div>
-                                        <div class="swiper-slide text-center">Slide 2</div>
-                                        <div class="swiper-slide text-center">Slide 3</div>
+                                        <div class="swiper-slide text-center">
+                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
+                                                alt="" class="w-full">
+                                        </div>
+                                        <div class="swiper-slide text-center">
+                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
+                                                alt="" class="w-full">
+                                        </div>
                                     </div>
 
 
-                                    {{-- <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div> --}}
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
                                 </div>
                             </div>
                             <div class="md:ps-7 md:pt-1">
@@ -140,7 +147,8 @@
                 <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 mt-12">
                     <!-- First Pricing Card -->
                     <div class="border rounded-md p-6">
-                        <h3 class="text-gray-800 dark:text-white text-xl font-semibold mb-2 flex items-center">Free<span
+                        <h3 class="text-gray-800 dark:text-white text-xl font-semibold mb-2 flex items-center">
+                            Free<span
                                 class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">pengguna
                                 gratis</span></h3>
                         <p class="text-sm text-gray-500">Untuk jangka pendek</p>
@@ -201,7 +209,8 @@
                     <div class="border rounded-md p-6">
                         <h3 class="text-gray-800 dark:text-white text-xl font-semibold mb-2 flex items-center">Premium
                             <span class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">
-                                pengguna premium</span></h3>
+                                pengguna premium</span>
+                        </h3>
                         <p class="text-sm text-gray-500">Untuk jangka panjang</p>
 
                         <div class="mt-6">
@@ -260,10 +269,12 @@
         </div>
 
         {{-- FAQ --}}
-        <div class="gap-4 flex justify-center items-center min-h-screen py-10" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">
+        <div class="gap-4 flex justify-center items-center min-h-screen py-10" data-aos="fade-up"
+            data-aos-offset="100" data-aos-easing="ease-in-sine">
             <div class="max-w-6xl w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
                 <!-- Title -->
-                <h1 class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-6">Pertanyaan Tentang Kami</h1>
+                <h1 class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-6">Pertanyaan Tentang
+                    Kami</h1>
 
                 <!-- FAQ Section -->
                 <div class="space-y-6" id="faq">
@@ -371,19 +382,18 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
         const swiper = new Swiper('.swiper', {
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
 
             autoplay: {
-                delay: 1500, // Delay between transitions in milliseconds
-                disableOnInteraction: false, // Allow autoplay to continue after user interactions
+                delay: 1500,
+                disableOnInteraction: false,
             },
 
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -391,7 +401,6 @@
         });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 <div class="py-0 bg-[#45526e] dark:bg-gray-900">
     @include('footer')
