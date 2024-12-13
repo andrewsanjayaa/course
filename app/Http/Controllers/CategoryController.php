@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Detail;
 use Illuminate\Support\Facades\Auth;
-use Cloudinary\Cloudinary as Cloudinary;
+use Cloudinary\Cloudinary;
 
 class CategoryController extends Controller
 {
@@ -92,7 +92,7 @@ class CategoryController extends Controller
             'slug' => $request->slug,
         ]);
 
-        return redirect()->route('dashboard')->with('success', 'Category created successfully');
+        return redirect()->route('categories')->with('success', 'Category created successfully');
     }
 
     public function edit($slug)
@@ -132,17 +132,22 @@ class CategoryController extends Controller
                 $uploadedFile = $cloudinary->uploadApi()->upload($image->getRealPath());
 
                 $imageUrl = $uploadedFile['secure_url'];
-            }
 
-            $category->name = $request->name;
-            $category->description = $request->description;
-            $category->slug = $request->slug;
-            $category->image = $imageUrl;
-            $category->save();
+                $category->name = $request->name;
+                $category->description = $request->description;
+                $category->slug = $request->slug;
+                $category->image = $imageUrl;
+                $category->save();
+            } else {
+                $category->name = $request->name;
+                $category->description = $request->description;
+                $category->slug = $request->slug;
+                $category->save();
+            }
         } catch (\Exception $e) {
             return redirect()->route('category.create')->with('error', 'Failed to update category. Please try again.');
         }
-        return redirect()->route('dashboard')->with('success', 'Category updated successfully');
+        return redirect()->route('categories')->with('success', 'Category updated successfully');
     }
 
     public function delete($slug)
@@ -158,6 +163,6 @@ class CategoryController extends Controller
         ]);
         $cloudinary->uploadApi()->destroy($publicId);
         $category->delete();
-        return redirect()->route('dashboard')->with('success', 'Category deleted successfully');
+        return redirect()->route('categories')->with('success', 'Category deleted successfully');
     }
 }
