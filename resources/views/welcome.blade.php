@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Daanc Corp.</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="icon"
-        href="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -35,7 +34,7 @@
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <a type="button" href="{{ route('register') }}"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Masuk</a>
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</a>
                 <button data-collapse-toggle="navbar-sticky" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
@@ -53,19 +52,19 @@
                     <li>
                         <a href="#home"
                             class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                            aria-current="page">Beranda</a>
+                            aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="#about"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tentang</a>
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
                     </li>
                     <li>
                         <a href="#pricing"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Harga</a>
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
                     </li>
                     <li>
                         <a href="#faq"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Tanya</a>
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -75,15 +74,15 @@
     <div class="grid grid-rows-2 md:grid-cols-1 dark:bg-gray-900 bg-white">
 
         <!-- Hero Section -->
-        <div class="gap-4" id="home">
-            <div class="col-12">
-                <div class="hero w-full min-h-screen bg-cover bg-no-repeat bg-center"
-                    style="background-image: url(https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/58e1592a5c93e003b70aa05fd58d557b/detailed)">
-                    <div class="hero-overlay bg-opacity-60 flex items-center justify-center">
+            <div class="gap-4" id="home">
+                <div class="col-12">
+                    <div class="hero w-full min-h-screen bg-cover bg-no-repeat bg-center"
+                        style="background-image: url(https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/58e1592a5c93e003b70aa05fd58d557b/detailed)">
+                        <div class="hero-overlay bg-opacity-60 flex items-center justify-center">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
         <!-- About Us Section -->
         <div class="gap-4" id="about" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine"
@@ -92,24 +91,24 @@
                 <div class="mx-4 sm:mx-12">
                     <section class="py-12 md:py-16">
                         <h2 class="text-3xl font-bold tracking-tight text-gray-800 dark:text-white mb-6">
-                            Tentang Kami
+                            About Us
                         </h2>
                         <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
                             <div class="md:h-64 pt-2">
                                 <div class="swiper w-full h-96">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide text-center">
-                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
+                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/baa707222eac6aa327a5f59ffddbe653/detailed"
                                                 alt="" class="w-full">
                                         </div>
                                         <div class="swiper-slide text-center">
-                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
+                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/cdec834bc85aa59a01c747687f36671b/detailed"
                                                 alt="" class="w-full">
-                                        </div>
-                                        <div class="swiper-slide text-center">
-                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed"
-                                                alt="" class="w-full">
-                                        </div>
+                                            </div>
+                                            <div class="swiper-slide text-center">
+                                                <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/bc3e11fa2cfb27a97c1153fb162e951f/detailed"
+                                                    alt="" class="w-full">
+                                                </div>
                                     </div>
 
 
@@ -118,16 +117,13 @@
                                 </div>
                             </div>
                             <div class="md:ps-7 md:pt-1">
-                                <h1 class ="font-bold text-2xl text-gray-800 dark:text-white"> Bingung mencari tempat
-                                    belajar?</h1>
+                                <h1 class ="font-bold text-2xl text-gray-800 dark:text-white"> Struggling to find a good study course?
+                                </h1>
                                 <p
                                     class="text-gray-700 dark:text-gray-400 md:text-xl text-xl sm:min-w-screen text-justify mt-2">
-                                    Daanc Academy merupakan platform online course yang berfokus pada mata pelajaran
-                                    SAINS dan MATEMATIKA.
-                                    Kami menyediakan solusi bagi pelajar SMP dan SMA melalui video pembelajaran beserta
-                                    artikel materi. Temukan
-                                    jawaban atas keluhan Anda mulai dari mata pelajaran IPA, MTK, BIOLOGI, FISIKA, dan
-                                    KIMIA melalui fitur kami!
+                                    DAANC Academy is an online course platform that focuses on Science and Math subjects. 
+                                    We provide a wide selection of learning videos and material articles, fit for junior high and high school students in Indonesia. 
+                                    Find answers to your worries about Science, Mathematics, Biology, Physics, and Chemistry subjects through our features!
                                 </p>
                             </div>
                         </div>
@@ -140,27 +136,25 @@
         <div class="gap-4" id="pricing" data-aos="fade-up" data-aos-offset="150" data-aos-easing="ease-in-sine">
             <div class="max-w-6xl mx-auto mt-">
                 <div class="text-center">
-                    <h2 class="text-gray-800 dark:text-white text-4xl font-bold mb-4">Layanan Kami </h2>
-                    <p class="text-sm text-gray-500 dark:text-white">Pilihan harga fleksibel sesuai kebutuhan Anda</p>
+                    <h2 class="text-gray-800 dark:text-white text-4xl font-bold mb-4">Pricing </h2>
+                    <p class="text-sm text-gray-500 dark:text-white">Flexible pricing options according to your needs</p>
                 </div>
 
                 <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 mt-12">
                     <!-- First Pricing Card -->
                     <div class="border rounded-md p-6">
-                        <h3 class="text-gray-800 dark:text-white text-xl font-semibold mb-2 flex items-center">
-                            Free<span
-                                class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">pengguna
-                                gratis</span></h3>
-                        <p class="text-sm text-gray-500">Untuk jangka pendek</p>
+                        <h3 class="text-gray-800 dark:text-white text-xl font-semibold mb-2 flex items-center">Free<span
+                                class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">Free User</span></h3>
+                        <p class="text-sm text-gray-500">For short term</p>
 
                         <div class="mt-6">
                             <h3 class="text-gray-800 dark:text-white text-2xl font-semibold">Rp0 <sub
-                                    class="text-gray-500 text-sm font-medium">per bulan</sub></h3>
+                                    class="text-gray-500 text-sm font-medium">per month</sub></h3>
                         </div>
 
                         <div class="mt-6">
-                            <h4 class="text-gray-800 dark:text-white text-xl font-semibold mb-2">Manfaat</h4>
-                            <p class="text-sm text-gray-500">Apa saja yang bisa anda peroleh</p>
+                            <h4 class="text-gray-800 dark:text-white text-xl font-semibold mb-2">Benefits</h4>
+                            <p class="text-sm text-gray-500">What can you get?</p>
 
                             <ul class="mt-6 space-y-4">
                                 <li class="flex items-center text-sm text-gray-500">
@@ -170,7 +164,7 @@
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
                                             data-original="#000000" />
                                     </svg>
-                                    5+ video pembelajaran gratis
+                                    Up to 3 free learning videos
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -179,7 +173,7 @@
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
                                             data-original="#000000" />
                                     </svg>
-                                    5+ artikel pembelajaran gratis
+                                    Up to 3 free learning articles
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -200,8 +194,7 @@
                             </ul>
 
                             <button type="button"
-                                class="w-full mt-6 px-5 py-2.5 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md">Buy
-                                now</button>
+                                class="w-full mt-6 px-5 py-2.5 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md">Subscribe</button>
                         </div>
                     </div>
 
@@ -209,19 +202,18 @@
                     <div class="border rounded-md p-6">
                         <h3 class="text-gray-800 dark:text-white text-xl font-semibold mb-2 flex items-center">Premium
                             <span class="px-2 py-1 text-xs font-semibold text-white bg-blue-500 rounded-md ml-3">
-                                pengguna premium</span>
-                        </h3>
-                        <p class="text-sm text-gray-500">Untuk jangka panjang</p>
+                                Premium User</span></h3>
+                        <p class="text-sm text-gray-500">For long term</p>
 
                         <div class="mt-6">
                             <h3 class="text-gray-800 dark:text-white text-2xl font-semibold">Rp109.000
-                                <sub class="text-gray-500 text-sm font-medium">per bulan</sub>
+                                <sub class="text-gray-500 text-sm font-medium">per month</sub>
                             </h3>
                         </div>
 
                         <div class="mt-6">
-                            <h4 class="text-gray-800 dark:text-white text-xl font-semibold mb-2">Manfaat</h4>
-                            <p class="text-sm text-gray-500">Apa saja yang bisa anda peroleh</p>
+                            <h4 class="text-gray-800 dark:text-white text-xl font-semibold mb-2">Benefits</h4>
+                            <p class="text-sm text-gray-500">What can you get?</p>
 
                             <ul class="mt-6 space-y-4">
                                 <li class="flex items-center text-sm text-gray-500">
@@ -231,7 +223,7 @@
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
                                             data-original="#000000" />
                                     </svg>
-                                    Semua video pembelajaran gratis
+                                    Up to 10+ free learning videos
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -240,7 +232,7 @@
                                             d="M9.707 19.121a.997.997 0 0 1-1.414 0l-5.646-5.647a1.5 1.5 0 0 1 0-2.121l.707-.707a1.5 1.5 0 0 1 2.121 0L9 14.171l9.525-9.525a1.5 1.5 0 0 1 2.121 0l.707.707a1.5 1.5 0 0 1 0 2.121z"
                                             data-original="#000000" />
                                     </svg>
-                                    Semua artikel gratis
+                                    Up to 10+ free learning articles
                                 </li>
                                 <li class="flex items-center text-sm text-gray-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -260,8 +252,7 @@
                             </ul>
 
                             <button type="button"
-                                class="w-full mt-6 px-5 py-2.5 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md">Buy
-                                now</button>
+                                class="w-full mt-6 px-5 py-2.5 text-sm text-white bg-blue-500 hover:bg-blue-600 rounded-md">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -269,12 +260,10 @@
         </div>
 
         {{-- FAQ --}}
-        <div class="gap-4 flex justify-center items-center min-h-screen py-10" data-aos="fade-up"
-            data-aos-offset="100" data-aos-easing="ease-in-sine">
+        <div class="gap-4 flex justify-center items-center min-h-screen py-10" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">
             <div class="max-w-6xl w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
                 <!-- Title -->
-                <h1 class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-6">Pertanyaan Tentang
-                    Kami</h1>
+                <h1 class="text-3xl font-semibold text-center text-gray-800 dark:text-white mb-6">Frequently Asked Questions</h1>
 
                 <!-- FAQ Section -->
                 <div class="space-y-6" id="faq">
@@ -282,8 +271,7 @@
                     <div x-data="{ open: false }">
                         <button @click="open = !open"
                             class="w-full text-left bg-gray-200 p-4 rounded-md shadow-sm flex justify-between items-center hover:bg-gray-300 transition-all duration-300">
-                            <span class="text-lg font-semibold text-gray-800">Apa saja fitur di platform Daanc
-                                Academy?</span>
+                            <span class="text-lg font-semibold text-gray-800">What features are available on the Daanc Academy platform?</span>
                             <span class="text-gray-500">
                                 <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -296,11 +284,9 @@
                             </span>
                         </button>
                         <div x-show="open" x-transition class="mt-4 p-4 bg-gray-50 rounded-md shadow-sm">
-                            <p class="text-gray-700">Daanc Academy memiliki 2 fitur utama, yaitu:</p>
-                            <li class="text-gray-700">Konfigurasi Profil Akun: Anda bisa mengedit profil akun sendiri
-                                mulai dari alamat hingga biodata!</li>
-                            <li class="text-gray-700">Akses Materi Pembelajaran: Anda bisa mengakses materi video dan
-                                artikel melalui pilihan pengguna gratis ataupun berbayar!</li>
+                            <p class="text-gray-700">Daanc Academy has two main features:</p>
+                            <li class="text-gray-700">Account Profile Configuration: You can edit your account profile, including your address and personal information!</li>
+                            <li class="text-gray-700">AAccess to Learning Materials: You can access video and article materials through either free or paid user options!</li>
                         </div>
                     </div>
 
@@ -308,8 +294,7 @@
                     <div x-data="{ open: false }">
                         <button @click="open = !open"
                             class="w-full text-left bg-gray-200 p-4 rounded-md shadow-sm flex justify-between items-center hover:bg-gray-300 transition-all duration-300">
-                            <span class="text-lg font-semibold text-gray-800">Apa saja materi pembelajaran yang
-                                terdapat dalam Daanc Academy?</span>
+                            <span class="text-lg font-semibold text-gray-800">What learning materials are available on Daanc Academy? </span>
                             <span class="text-gray-500">
                                 <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -322,9 +307,7 @@
                             </span>
                         </button>
                         <div x-show="open" x-transition class="mt-4 p-4 bg-gray-50 rounded-md shadow-sm">
-                            <p class="text-gray-700">Daanc Academy menyediakan course online khusus yang terdiri dari
-                                mapel IPA dan MTK bagi pelajar SMP serta MTK, BIOLOGI, FISIKA, dan KIMIA bagi pelajar
-                                SMA jurusan IPA.</code>
+                            <p class="text-gray-700">Daanc Academy offers online courses specifically in Science and Mathematics for junior high students, as well as Mathematics, Biology, Physics, and Chemistry for senior high school students in the Science major.</code>
                             </p>
                         </div>
                     </div>
@@ -333,8 +316,7 @@
                     <div x-data="{ open: false }">
                         <button @click="open = !open"
                             class="w-full text-left bg-gray-200 p-4 rounded-md shadow-sm flex justify-between items-center hover:bg-gray-300 transition-all duration-300">
-                            <span class="text-lg font-semibold text-gray-800">Bagaimana cara saya mengakses video dan
-                                artikel pembelajaran?</span>
+                            <span class="text-lg font-semibold text-gray-800">How can I access videos and learning articles?        </span>
                             <span class="text-gray-500">
                                 <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -347,9 +329,8 @@
                             </span>
                         </button>
                         <div x-show="open" x-transition class="mt-4 p-4 bg-gray-50 rounded-md shadow-sm">
-                            <p class="text-gray-700">Untuk mengakses video dan artikel pembelajaran:
-                            <p class= "text-gray-700"> Anda hanya perlu membuat akun, pilih paket pengguna, lalu masuk
-                                ke dalam halaman Course. Pilihlah materi pembelajaran sesuai kebutuhan Anda.</p>
+                            <p class="text-gray-700">To access videos and learning articles: 
+                            <p class= "text-gray-700"> Simply create an account, choose a pricing option, then enter the Course page. Select the learning material according to your needs.</p>
                             </p>
                         </div>
                     </div>
@@ -358,8 +339,7 @@
                     <div x-data="{ open: false }">
                         <button @click="open = !open"
                             class="w-full text-left bg-gray-200 p-4 rounded-md shadow-sm flex justify-between items-center hover:bg-gray-300 transition-all duration-300">
-                            <span class="text-lg font-semibold text-gray-800">Apa manfaat saya belajar di Daanc
-                                Academy?</span>
+                            <span class="text-lg font-semibold text-gray-800">What are the benefits of studying at Daanc Academy?</span>
                             <span class="text-gray-500">
                                 <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
@@ -372,9 +352,8 @@
                             </span>
                         </button>
                         <div x-show="open" x-transition class="mt-4 p-4 bg-gray-50 rounded-md shadow-sm">
-                            <p class="text-gray-700">Daanc Academy menyediakan materi pembelajaran yang fleksibel
-                                dimana Anda bisa menonton video belajar dan membaca artikel sekaligus. Video kami juga
-                                berasal dari sumber yang terpercaya dan teruji kualitasnya!</p>
+                            <p class="text-gray-700">Daanc Academy provides flexible learning materials where you can watch learning videos and read articles simultaneously. 
+                                Our videos are sourced from trusted and tested-quality providers!</p>
                         </div>
                     </div>
                 </div>
@@ -382,25 +361,26 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
         const swiper = new Swiper('.swiper', {
+            // Optional parameters
             direction: 'horizontal',
             loop: true,
 
             autoplay: {
-                delay: 1500,
-                disableOnInteraction: false,
+                delay: 1500, // 
+                disableOnInteraction: false, 
             },
 
+            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
         });
     </script>
-
 </body>
 <div class="py-0 bg-[#45526e] dark:bg-gray-900">
     @include('footer')
