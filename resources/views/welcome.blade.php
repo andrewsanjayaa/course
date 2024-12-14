@@ -98,15 +98,15 @@
                                 <div class="swiper w-full h-96">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide text-center">
-                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/baa707222eac6aa327a5f59ffddbe653/detailed"
+                                            <img src="https://res.cloudinary.com/durosbtet/image/upload/v1734106008/aboutus1.png"
                                                 alt="" class="w-full">
                                         </div>
                                         <div class="swiper-slide text-center">
-                                            <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/cdec834bc85aa59a01c747687f36671b/detailed"
+                                            <img src="https://res.cloudinary.com/durosbtet/image/upload/v1734106008/aboutus2.png"
                                                 alt="" class="w-full">
                                             </div>
                                             <div class="swiper-slide text-center">
-                                                <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/bc3e11fa2cfb27a97c1153fb162e951f/detailed"
+                                                <img src="https://res.cloudinary.com/durosbtet/image/upload/v1734106008/aboutus3.png"
                                                     alt="" class="w-full">
                                                 </div>
                                     </div>
