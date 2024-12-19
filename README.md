@@ -9,7 +9,7 @@
     </ol>
 </p>
 
-<h2 align="center">Here is how run the code</h2>
+<h2 align="center">Here is how to run the code</h2>
 
 <p>
     <ol>
@@ -18,4 +18,27 @@
         <li>Open Second Terminal</li>
         <li>Run <b>npm run dev</b></li>
     </ol>
+</p>
+
+<h2 align="center">Tech</h2>
+
+<p>
+    <ul>
+        <li>Laravel 11</li>
+        <li>Tailwind CSS</b></li>
+        <li>Swiper JS</li>
+        <li>AOS JS</li>
+    </ul>
+</p>
+
+<h2 align="center">Data Kelompok</h2>
+
+<p>
+    <ul>
+        <li>Afifah Viona Afra Amattullah - 2431171</li>
+        <li>Cherish Fayola - 2431172</li>
+        <li>Daniel - 2431174</li>
+        <li>Novita Erica Angel - 2431173</li>
+        <li>Andrew Sanjaya Cuandra - 2431195</li>
+    </ul>
 </p>
