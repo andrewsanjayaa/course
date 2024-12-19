@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
 <head>
@@ -7,7 +7,7 @@
 
     <title>Daanc Corp.</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="icon" href="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/16b4740f03b44237745b1ea3b1715ae3/detailed">
+    {{-- <link rel="icon" href="https://res.cloudinary.com/durosbtet/image/upload/v1733235289/logo.png"> --}}
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -26,9 +26,9 @@
     <nav
         class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://res.cloudinary.com/durosbtet/image/upload/v1733837721/logo-transparant.png"
+            <a href="{{ Route('dashboard') }}"
                 class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/cf7d3514b32e631ae4b052566b47c50b/detailed"
+                <img src="https://res.cloudinary.com/durosbtet/image/upload/v1733235289/logo.png"
                     class="h-8">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Daanc Academy</span>
             </a>
@@ -77,7 +77,7 @@
             <div class="gap-4" id="home">
                 <div class="col-12">
                     <div class="hero w-full min-h-screen bg-cover bg-no-repeat bg-center"
-                        style="background-image: url(https://res-console.cloudinary.com/durosbtet/media_explorer_thumbnails/58e1592a5c93e003b70aa05fd58d557b/detailed)">
+                        style="background-image: url(https://res.cloudinary.com/durosbtet/image/upload/v1733580246/hero.png)">
                         <div class="hero-overlay bg-opacity-60 flex items-center justify-center">
                         </div>
                     </div>
