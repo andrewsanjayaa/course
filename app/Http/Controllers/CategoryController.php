@@ -15,7 +15,7 @@ class CategoryController extends Controller
     {
         $parsedUrl = parse_url($url);
         $path = $parsedUrl['path'];
-
+        //dd($path);
         $pathParts = explode('/image/upload/', $path);
         $publicIdWithVersion = $pathParts[1];
 
